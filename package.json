@@ -1,0 +1,17 @@
+{
+  "name": "jj-doc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx antm-doc-start",
+    "release": "npx antm-doc-build && npx gh-pages"
+  },
+  "keywords": ["biz"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@antmjs/doc": "^2.4.0",
+    "@antmjs/types": "^2.4.0"
+  }
+}
