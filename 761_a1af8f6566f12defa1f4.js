@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjj_doc=self.webpackChunkjj_doc||[]).push([[761],{3761:(e,n,o)=>{o.r(n),o.d(n,{default:()=>t});const t={commonListPage:o.e(24).then(o.bind(o,1024)),commonFormCards:o.e(430).then(o.bind(o,3430)),commonFooterBtns:o.e(401).then(o.bind(o,8401)),bizSelect:o.e(433).then(o.bind(o,6433))}}}]);
