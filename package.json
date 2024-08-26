@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx antm-doc-start",
-    "release": "npx antm-doc-build && npx gh-pages"
+    "release": "npx antm-doc-build && npx gh-pages -d doc_build"
   },
   "keywords": ["biz"],
   "author": "",
