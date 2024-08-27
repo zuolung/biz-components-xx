@@ -4,7 +4,7 @@
 
 表单卡片，用于表单页面提交、表单弹窗提交、页面详情等场景
 
-### 参数
+### 基本参数
 
 提交表单的卡片渲染， 数组传入配置项`config`
 
@@ -15,8 +15,11 @@
 - `titleStyle`: 卡片标题的样式
 - `config[xx].title`: 卡片标题, 传入空字符/不传则不展示
 - `config[xx].span`: 总宽度24份，占有多少份, 优先级小于form里面的span
-- `change时间`: 回调参数所有最新的表单值
+- `config[xx].show`: 当前卡片是否展示，不填默认展示
+- `change事件`: 回调参数所有最新的表单值，第二个参数是setForm设置表单值的方法
 
+
+### 表单配置
 `config[xx].form`卡片表单里面的配置属性如下
 - `component`组件类型， 下面属性和component同一层级
 1. `input`: 输入框组件，elemtnUI的大部分属性，后缀使用suffix设置，暂时只支持文本
@@ -89,6 +92,6 @@ this.$refs.CommonFormCards.valid((res) => {
 - `prefix-XXFildName`: 表单项前缀内容，回调参数所有表单的现有值
 - `prefix-XXFildName`: 表单项前缀内容，回调参数所有表单的现有值formData、当前表单值value
 - `suffix-XXFildName`: 表单项后缀内容，回调参数所有表单的现有值formData、当前表单值value
-- `suffix-col`: 和表单布局相同的插入内容，只适合卡片数据一个项的时候
-- `suffix-colXXIndex`: 和表单布局相同的插入内容
+- `suffix-col`: 和表单布局相同的插入内容，即elementUI的Col布局的内容，只适合卡片数据一个项的时候
+- `suffix-colXXIndex`: 和表单布局相同的插入内容，即elementUI的Col布局的内容
 
