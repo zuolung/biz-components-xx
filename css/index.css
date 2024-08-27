@@ -253,9 +253,9 @@
   margin-bottom: 20px;
 }
 :root {
-  --primary-color: #4e4ec8;
-  --primary-back-color: #e5e4f8;
-  --header-back-color: #4e4ec8;
+  --primary-color: #3864f5;
+  --primary-back-color: #ededed;
+  --header-back-color: #4d70fc;
 }
 
 /* stylelint-disable selector-max-type */
@@ -465,9 +465,9 @@
   pointer-events: auto;
 }
 :root {
-  --primary-color: #4e4ec8;
-  --primary-back-color: #e5e4f8;
-  --header-back-color: #4e4ec8;
+  --primary-color: #3864f5;
+  --primary-back-color: #ededed;
+  --header-back-color: #4d70fc;
 }
 
 :root {
@@ -494,9 +494,9 @@
   background-color: #f7f8fa;
 }
 :root {
-  --primary-color: #4e4ec8;
-  --primary-back-color: #e5e4f8;
-  --header-back-color: #4e4ec8;
+  --primary-color: #3864f5;
+  --primary-back-color: #ededed;
+  --header-back-color: #4d70fc;
 }
 
 /* stylelint-disable keyframes-name-pattern */
@@ -689,9 +689,9 @@
   padding-right: 1px;
 }
 :root {
-  --primary-color: #4e4ec8;
-  --primary-back-color: #e5e4f8;
-  --header-back-color: #4e4ec8;
+  --primary-color: #3864f5;
+  --primary-back-color: #ededed;
+  --header-back-color: #4d70fc;
 }
 
 /* stylelint-disable selector-max-type */
@@ -828,9 +828,9 @@
   display: flex;
 }
 :root {
-  --primary-color: #4e4ec8;
-  --primary-back-color: #e5e4f8;
-  --header-back-color: #4e4ec8;
+  --primary-color: #3864f5;
+  --primary-back-color: #ededed;
+  --header-back-color: #4d70fc;
 }
 
 :root {
@@ -890,9 +890,9 @@
   border-radius: 999px;
 }
 :root {
-  --primary-color: #4e4ec8;
-  --primary-back-color: #e5e4f8;
-  --header-back-color: #4e4ec8;
+  --primary-color: #3864f5;
+  --primary-back-color: #ededed;
+  --header-back-color: #4d70fc;
 }
 
 :root {
@@ -931,9 +931,9 @@
   box-shadow: 0 8px 12px #ebedf0;
 }
 :root {
-  --primary-color: #4e4ec8;
-  --primary-back-color: #e5e4f8;
-  --header-back-color: #4e4ec8;
+  --primary-color: #3864f5;
+  --primary-back-color: #ededed;
+  --header-back-color: #4d70fc;
 }
 
 :root {
@@ -1032,9 +1032,9 @@
   padding: 2px 8px;
 }
 :root {
-  --primary-color: #4e4ec8;
-  --primary-back-color: #e5e4f8;
-  --header-back-color: #4e4ec8;
+  --primary-color: #3864f5;
+  --primary-back-color: #ededed;
+  --header-back-color: #4d70fc;
 }
 
 * {
@@ -1047,8 +1047,8 @@ a {
   text-decoration: none;
 }
 :root {
-  --primary-color: #4e4ec8;
-  --primary-back-color: #e5e4f8;
-  --header-back-color: #4e4ec8;
+  --primary-color: #3864f5;
+  --primary-back-color: #ededed;
+  --header-back-color: #4d70fc;
 }
 
