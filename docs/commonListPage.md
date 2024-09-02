@@ -36,7 +36,7 @@ this.$refs.CommonListPage.handleSearch();
 action点击方法、icon对应iconfont,
 
 type 内部按钮，都有图标
-- `export`，普通到处,不需要其他参数
+- `export`，普通到处,不需要其他参数，`resetExportParams`属性可以重置导出的请求参数，例如不需要tab的字段，自己过滤掉
 - `add`: 只是图片，需要配置action
 - `dropMenu`: 有额外menus下拉按钮项，label和data的组合
 - `import`,普通导入，需要额外 query 如下：
@@ -92,6 +92,7 @@ type 内部按钮，都有图标
 
 - `tableButtons`: 右侧按钮, 开发环境生效，线上使用服务端列表返回的buttonInfo
 - `tableAction`: 点击按钮的方法，通过第一个参数ID权限编码来判断点击的按钮，第二个参数ROW是当前行的数据
+- `resetTableColConfig`: 重置表格的列配置，例如不同tab下面的配置文案不一样，每次请求列表信息都会先请求配置项信息
 
 ```jsx
   <CommonListPage
@@ -104,6 +105,8 @@ type 内部按钮，都有图标
 ```
 
 ### slot
+
+配合`tableColSlots`使用
 
 ```jsx
   <template v-slot:table-订单状态="{ value, row }">
