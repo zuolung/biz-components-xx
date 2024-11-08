@@ -90,9 +90,13 @@ type 内部按钮，都有图标
 
 ### 表格相关参数
 
+- `getSummaries`: 表格统计，和`elementUITable`的`summary-method`一致
+- `selectable`: 可选数据，和`elementUITable`一致
 - `tableButtons`: 右侧按钮, 开发环境生效，线上使用服务端列表返回的buttonInfo
 - `tableAction`: 点击按钮的方法，通过第一个参数ID权限编码来判断点击的按钮，第二个参数ROW是当前行的数据
 - `resetTableColConfig`: 重置表格的列配置，例如不同tab下面的配置文案不一样，每次请求列表信息都会先请求配置项信息
+- `tableOperateWidth`: 表格右侧操作栏的宽度
+- `tableOperateCount`: 表格右侧操作栏展示的最多数量，多出来的下拉操作
 
 ```jsx
   <CommonListPage
@@ -103,6 +107,19 @@ type 内部按钮，都有图标
     :tableButtons="[{ id: -66, label: '测试按钮' }]"
     />
 ```
+
+表格数据刷新
+
+```js
+this.$refs.CommonListPage.handleSearch()
+```
+
+### 特殊功能
+
+- 排序`sortableFields`或者`sortableLabels`，自动排序
+- 重置导出的请求参数`resetExportParams`,返回新的请求参数
+- 路由参数是否回填搜索，`searchUseQuery`默认true
+
 
 ### slot
 

@@ -16,7 +16,9 @@
 - `config[xx].title`: 卡片标题, 传入空字符/不传则不展示
 - `config[xx].span`: 总宽度24份，占有多少份, 优先级小于form里面的span
 - `config[xx].show`: 当前卡片是否展示，不填默认展示
-- `change事件`: 回调参数所有最新的表单值，第二个参数是setForm设置表单值的方法
+- `config[xx].expandShow`: 当前卡片是否有收展功能
+- `config[xx].expandCount`: 收起展示的数量
+- `change事件`: 回调参数所有最新的表单值，第二个参数是setForm设置表单值的方法, 第三个参数formData
 
 
 ### 表单配置
@@ -27,7 +29,7 @@
 3. `radio`: elemtnUI单选组件
 4. `city`: 城市选择组件`e6City`，输出的字段名fieldNameProvince、fieldNameCity、fieldNameDistrict，默认分别是province、city、area
 5. `datePicker`: elemtnUI日历选择
-6. `uploader`: e6的上传组件，acceptType支持上传的文件类型
+6. `uploader`: e6的上传组件，acceptType支持上传的文件类型、fileType对象（object）/字符串(string) ...
 
 - `fieldName`: 字段名称
 - `label`: 表单label表述，支持函数
@@ -36,6 +38,7 @@
 - `labelWidth`: 表单label的宽度，优先级大于外层
 - `ifDisabled`: 是否禁用，必须传函数，返回布尔值
 - `tips`: 表单项的提示文案
+- `className`: 挂在col组件上面，可通过函数返回特定class来修改部分特殊表单样式
 
 例子如下：
 
@@ -48,7 +51,6 @@
     ifDisabled: () => this.pageType !== "add",
     show: () => this.pageType !== "add",
     required: true,
-    useElement: true,
   },
   {
     component: "bizSelect",
@@ -70,7 +72,7 @@
 ]
 ```
 
-> 涉及到动态更新，属性请采用函数返回属性值
+> 涉及到动态更新，属性请采用`函数`返回属性值
 
 ### 验证表单
 

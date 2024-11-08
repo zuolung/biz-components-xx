@@ -8,6 +8,10 @@
 
 下拉数据组件，包含了数据的请求初始化, 组件参数和入参如下：
 
+- `service`: 请的微服务名称，默认为`manage`
+- `resetOptions`: 重置请求的数据等结构并返回【id】【label】的数据结构
+- `boryStyle`: 设置样式
+- 事件`change`： 回调参数选中的值
 - `type`: 内部类型：
 1. `carType`: 汽车类型
 2. `carNo`:  车牌下拉数据 
@@ -22,8 +26,6 @@
 - `options`: 传入选择项, 不请求数据的时候可以使用
 - `useElement`: 使用elmentUI的select
 - `useElement`默认是false的时候参数和`e6-vr-select`保持一致，true的使用请查看elementUI2.xx
-- `style`: 设置样式
-- 事件`change`： 回调参数选中的值
 
 ```jsx
 <BizSelect
